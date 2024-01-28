@@ -17,7 +17,7 @@ var BASE_URL = process.env.BASE_URL;
 
 const io = require('socket.io')(process.env.PORT2, {
   cors: {
-    origin: ['http://localhost:5173']
+    origin: ['https://sage-blini-98772f.netlify.app/']
   }
 });
 io.on('connection', socket => {
