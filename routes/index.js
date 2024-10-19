@@ -20,7 +20,7 @@ var field;
 
 const io = require("socket.io")(process.env.PORT2, {
   cors: {
-    origin: ["http://localhost:5173"],
+    origin: ["https://hospital-frontend-nine-silk.vercel.app/"],
   },
 });
 io.on("connection", (socket) => {
