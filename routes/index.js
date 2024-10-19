@@ -18,7 +18,7 @@ passport.use("patient-local", new localStrategy(Patient.authenticate()));
 var BASE_URL = process.env.BASE_URL;
 var field;
 
-const io = require("socket.io")(process.env.PORT, {
+const io = require("socket.io")(process.env.PORT2, {
   cors: {
     origin: ["https://hospital-frontend-nine-silk.vercel.app/"],
   },
