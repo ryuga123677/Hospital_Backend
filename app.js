@@ -39,7 +39,7 @@ passport.serializeUser(patientRouter.serializeUser());
 passport.deserializeUser(patientRouter.deserializeUser());
 app.use(cors(
   {
-    origin: ["http://localhost:5173"],
+    origin: ["https://hospital-frontend-nine-silk.vercel.app/"],
     credentials:true
   }
 ));
