@@ -46,10 +46,13 @@ const userSchema = new mongoose.Schema({
       ref: 'Patient',
     },
   ],
-
+  refreshToken: {
+    type: String
+}
 
 });
 userSchema.plugin(plm);
+
 const Owner = mongoose.model('Owner', userSchema);
 
 module.exports = Owner;

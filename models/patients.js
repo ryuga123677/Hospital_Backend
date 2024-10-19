@@ -18,6 +18,10 @@ const patientSchema = new mongoose.Schema({
   report:{
     type: mongoose.Schema.Types.ObjectId,
     ref:'Report'}
+    ,
+    refreshToken: {
+      type: String
+  }
   
 });
 patientSchema.plugin(plm);
